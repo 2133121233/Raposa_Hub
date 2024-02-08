@@ -5,8 +5,6 @@ local PhantomForcesWindow = Library:NewWindow("HYPER BLADEBALL")
 
 local AutoParry = PhantomForcesWindow:NewSection("Main")
 
-AutoParry:CreateButton("FPS BOOST", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/2133121233/Fpsboost/main/Boost"))()
-
 AutoParry:CreateButton("CLICK BLOCK SPAM", function()getgenv().SpamSpeed = 1
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
 end)
@@ -25,6 +23,3 @@ end)
 
 AutoParry:CreateToggle("Auto SPAM", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/datshort1/datmodhub/main/AutoClash"))()
 end)
-
-
- 
