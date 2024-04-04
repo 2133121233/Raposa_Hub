@@ -56,7 +56,7 @@ local SearchFrame = Instance.new("Frame")
 
 Flooded.ResetOnSpawn = false
 
-Flooded.Name = "Flooded"
+Flooded.Name = "Hyper Exec"
 Flooded.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Flooded.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Flooded.ResetOnSpawn = false
@@ -64,7 +64,7 @@ Flooded.Parent = gethui()
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = Flooded
-MainFrame.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
 MainFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.Position = UDim2.new(0.15633297, -44, 0.0564282313, -27)
 MainFrame.Size = UDim2.new(0.818025708, 0, 1, 0)
@@ -105,20 +105,20 @@ Console.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
 Executer.Name = "Executer"
 Executer.Parent = MainFrame
-Executer.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
-Executer.BorderColor3 = Color3.fromRGB(64, 148, 161)
+Executer.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
+Executer.BorderColor3 = Color3.fromRGB(0, 0, 200)
 Executer.Position = UDim2.new(0.215481207, 0, 0.138157919, 0)
 Executer.Visible = true
 Executer.Size = UDim2.new(0.723849356, 0, 0.809210539, 0)
 
 ScriptInput.Name = "ScriptInput"
 ScriptInput.Parent = Executer
-ScriptInput.BackgroundColor3 = Color3.fromRGB(24, 50, 99)
+ScriptInput.BackgroundColor3 = Color3.fromRGB(0, 0, 80)
 ScriptInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
 ScriptInput.Position = UDim2.new(0.0578034669, 0, 0.0569105372, 0)
 ScriptInput.Size = UDim2.new(0.910404623, 0, 0.66260165, 0)
 ScriptInput.Font = Enum.Font.SourceSans
-ScriptInput.Text = "--Fixed By Nath.#4468"
+ScriptInput.Text = "print("sanjirebaixado#8452")"
 ScriptInput.TextColor3 = Color3.fromRGB(255, 255, 255)
 ScriptInput.TextSize = 16.000
 ScriptInput.TextWrapped = true
@@ -140,14 +140,14 @@ local function ExecuteScript(script)
     if f then
     f()
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Flooded Android",
+            Title = "Hyper Android",
             Text = "Script Executed",
             Duration = 3
         })
     else
         print("Script execution error:", err)
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Flooded Android",
+            Title = "Hyper Android",
             Text = "Script Error",
             Duration = 3
         })
@@ -191,7 +191,7 @@ TextButton_3.TextSize = 14.000
 TextButton_3.MouseButton1Click:Connect(function()
 loadstring(getclipboard())()
 game.StarterGui:SetCore("SendNotification", {
-        Title = "Flooded Android";
+        Title = "Hyper Android";
         Text = "Script Executed From Clipboard";
         Duration = 3;
     })
@@ -202,7 +202,7 @@ UICorner_5.Parent = TextButton_3
 
 ScriptHubFrame.Name = "ScriptHubFrame"
 ScriptHubFrame.Parent = MainFrame
-ScriptHubFrame.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
+ScriptHubFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
 ScriptHubFrame.BorderColor3 = Color3.fromRGB(64, 148, 161)
 ScriptHubFrame.Position = UDim2.new(0.223849416, 0, 0.15789476, 0)
 ScriptHubFrame.Visible = false
@@ -231,7 +231,7 @@ scriptInput.Font = Enum.Font.SourceSans
 scriptInput.TextSize = 16
 scriptInput.TextWrapped = true
 scriptInput.Text = ""
-scriptInput.PlaceholderText = "Enter script code..."
+scriptInput.PlaceholderText = "Enter script here"
 scriptInput.ClearTextOnFocus = false
 scriptInput.Parent = ScriptHubFrame
 
@@ -329,10 +329,10 @@ addButton.MouseButton1Click:Connect(function()
     end
 end)
 
-Console_2.Name = "Console"
+Console_2.Name = "Dev Console"
 Console_2.Parent = MainFrame
-Console_2.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
-Console_2.BorderColor3 = Color3.fromRGB(64, 148, 161)
+Console_2.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
+Console_2.BorderColor3 = Color3.fromRGB(0, 0, 200)
 Console_2.Position = UDim2.new(0.224282146, 0, 0.183154821, 0)
 Console_2.Visible = false
 Console_2.Size = UDim2.new(0.723849356, 0, 0.809210539, 0)
@@ -342,7 +342,7 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 ScrollingFrame.Name = "ScrollingFrame"
 ScrollingFrame.Parent = Console_2
 ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
 ScrollingFrame.Position = UDim2.new(0.0766660869, 0, 0.0338661745, 0)
 ScrollingFrame.Size = UDim2.new(0, 352, 0, 205)
 ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
@@ -392,12 +392,12 @@ game:GetService("LogService").MessageOut:Connect(ConsoleOutput)
 
 title.Name = "title"
 title.Parent = MainFrame
-title.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
-title.BorderColor3 = Color3.fromRGB(64, 148, 161)
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
+title.BorderColor3 = Color3.fromRGB(p, 0, 150)
 title.Position = UDim2.new(0.0145368073, 0, 0.0427631587, 0)
 title.Size = UDim2.new(0.301255226, 0, 0.0756578967, 0)
 title.Font = Enum.Font.SourceSans
-title.Text = "Flooded V"
+title.Text = "Hyper Exec"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 40.000
 title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -449,16 +449,16 @@ UICorner_9.Parent = TextButton_4
 
 Seetings.Name = "Seetings"
 Seetings.Parent = MainFrame
-Seetings.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
-Seetings.BorderColor3 = Color3.fromRGB(64, 148, 161)
+Seetings.BackgroundColor3 = Color3.fromRGB(, 0, 150)
+Seetings.BorderColor3 = Color3.fromRGB(0, 0, 150)
 Seetings.Position = UDim2.new(0.191640079, 0, 0.161003232, 0)
 Seetings.Visible = false
 Seetings.Size = UDim2.new(0.791705072, 0, 0.809210539, 0)
 
 Speed.Name = "Speed"
 Speed.Parent = Seetings
-Speed.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
-Speed.BorderColor3 = Color3.fromRGB(64, 148, 161)
+Speed.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 150)
 Speed.Position = UDim2.new(0.0107135521, 0, 0, 0)
 Speed.Size = UDim2.new(0, 200, 0, 50)
 Speed.Font = Enum.Font.SourceSans
@@ -511,7 +511,7 @@ UICorner_12.Parent = JumpCon
 
 Jump.Name = "Jump"
 Jump.Parent = Seetings
-Jump.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
+Jump.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
 Jump.BorderColor3 = Color3.fromRGB(64, 148, 161)
 Jump.Position = UDim2.new(0.0107134581, 0, 0.25677219, 0)
 Jump.Size = UDim2.new(0, 110, 0, 50)
@@ -580,7 +580,7 @@ Search.BorderSizePixel = 0
 
 SearchFrame.Name = "SearchFrame"
 SearchFrame.Parent = MainFrame
-SearchFrame.BackgroundColor3 = Color3.fromRGB(64, 148, 161)
+SearchFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 150)
 SearchFrame.BorderColor3 = Color3.fromRGB(64, 148, 161)
 SearchFrame.Position = UDim2.new(0.191640079, 0, 0.161003232, 0)
 SearchFrame.Visible = false
@@ -676,13 +676,13 @@ TextButton_5.MouseButton1Click:Connect(function()
 end)
 
 TextButton_6.MouseButton1Click:Connect(function()
-    setclipboard("https://discord.gg/GtbFH")
+    setclipboard("HYPER EXEC ON TOP")
     print("Mouse button 1 clicked on TextButton_6")
 end)
 
 -- Animate the beta text with a typing animation (repeated)
 local function AnimateBetaText()
-    local text = "Version: Beta V2" -- The text to type
+    local text = "Version: BETA v1" -- The text to type
     local delayBetweenChars = 0.1 -- Adjust the delay between typing each character (in seconds)
     local delayBetweenRepeats = 1 -- Adjust the delay between each repeat (in seconds)
 
