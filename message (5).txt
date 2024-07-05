@@ -1,4 +1,5 @@
-
+loadstring(game:HttpGet("https://github.com/2133121233/Test/blob/main/Codex(The%20Best).txt"))()
+wait(1)
 local Developer_Player = "game.Players.LocalPlayer.UserId"
 local test_ModeAhax = false;
 
